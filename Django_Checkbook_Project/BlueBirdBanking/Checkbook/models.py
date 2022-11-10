@@ -21,4 +21,4 @@ class Transaction(models.Model):
     description = models.CharField(max_length=100)
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
 
-    Transactions = models.Manager
+    Transactions = models.Manager()
